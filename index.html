@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMART Status</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+    <p class="title">S.M.A.R.T Status</p>
+    <pre>
+        <p>Last updated at: 10/01/2020 16:57:48
+
+SnapRAID SMART report:
+
+   Temp  Power   Error   FP Size
+      C OnDays   Count        TB  Serial            Device    Disk
+ -----------------------------------------------------------------------
+     22    974       0  84%  3.0  WD-WCC4NNPTEAR7   /dev/sdf  d1
+     25   1527       0   7%  1.0  WD-WCC3F3KHYHT3   /dev/sdc  d3
+     24   1551       0  84%  3.0  WD-WCC4N0576744   /dev/sdi  d4
+     25   1630       0  84%  3.0  WD-WCC4N0495129   /dev/sde  d5
+     39    444       0  11%  6.0  WD-WX61D96AXU61   /dev/sdg  d6
+     24    452       0   6%  6.0  WD-WX61D48RYNDS   /dev/sdh  parity
+     23    325       0  SSD  0.2  50026B768267D74C  /dev/sdd  -
+     23    164       0  SSD  0.2  50026B77825122A9  /dev/sdb  -
+     23   1042 selferr 100%  3.0  WD-WCC4NNPTEXH2   /dev/sda  -
+
+The FP column is the estimated probability (in percentage) that the disk
+is going to fail in the next year.
+
+Probability that at least one disk is going to fail in the next year is 100%.
+
+Probability of data loss in the next year for different parity and
+combined scrub and repair time:
+
+  Parity  1 Week                1 Month             3 Months
+ -----------------------------------------------------------------------
+     1    40.81%                 89.43%               99.88%       
+     2     3.77%                 50.61%               99.83%       
+     3     0.21%                 15.30%               98.87%       
+     4     0.0077%                2.57%               87.88%       
+     5     0.00014%               0.20%               39.16%       
+     6     0.00000000000000%      0.00000000000000%     0.00000000000000%
+
+These values are the probabilities that in the next year you'll have a
+sequence of failures that the parity WONT be able to recover, assuming
+that you regularly scrub, and in case repair, the array in the specified
+time.</p>
+    </pre>
+    </div>
+    </section>
+</body>
+
+</html>
