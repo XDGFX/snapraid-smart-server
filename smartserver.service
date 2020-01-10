@@ -1,0 +1,12 @@
+[Unit]
+Description=S.M.A.R.T. Status Webserver
+
+[Service]
+WorkingDirectory=/opt/snapraid-smart-server
+ExecStart=/opt/snapraid-smart-server/smartserver.py
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+Type=simple
+
+[Install]
+WantedBy=default.target
